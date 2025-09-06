@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 90%;
+    max-width: 500px;
+}
+
+.auth-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.auth-form button {
+    width: 100%;
+    padding: 12px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.auth-form button:hover {
+    background: #5a6fd8;
+}
+
+.auth-form p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.auth-form a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+.dashboard {
+    text-align: center;
+}
+
+.dashboard h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.balance-display {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.balance-display h3 {
+    color: #28a745;
+    font-size: 24px;
+}
+
+.menu {
+    background: #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.menu ul {
+    list-style: none;
+    text-align: left;
+}
+
+.menu li {
+    padding: 8px 0;
+    font-size: 18px;
+    color: #495057;
+}
+
+.action-area {
+    margin: 20px 0;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#action-display {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+#amount-input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 200px;
+}
+
+#confirm-btn {
+    padding: 10px 20px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#confirm-btn:hover {
+    background: #218838;
+}
+
+.transaction-history {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.transaction-history h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#history-list {
+    list-style: none;
+    text-align: left;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#history-list li {
+    padding: 8px;
+    border-bottom: 1px solid #dee2e6;
+    color: #495057;
+}
+
+.success {
+    color: #28a745;
+}
+
+.error {
+    color: #dc3545;
+}
+
+.info {
+    color: #17a2b8;
+}
