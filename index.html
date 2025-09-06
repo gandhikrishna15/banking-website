@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Login/Registration Section -->
+    <div id="auth-section" class="container">
+        <div class="auth-form">
+            <h2 id="form-title">Login</h2>
+            <form id="auth-form">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <input type="email" id="email" placeholder="Email" style="display:none;">
+                <button type="submit" id="auth-btn">Login</button>
+            </form>
+            <p>
+                <span id="toggle-text">Don't have an account?</span>
+                <a href="#" id="toggle-link">Register</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Banking Dashboard -->
+    <div id="banking-section" class="container" style="display:none;">
+        <div class="dashboard">
+            <h2>Welcome to Banking System</h2>
+            <div class="balance-display">
+                <h3>Current Balance: $<span id="current-balance">1000.00</span></h3>
+            </div>
+            
+            <div class="menu">
+                <h3>Press a number key (1-5):</h3>
+                <ul>
+                    <li>1 - Withdraw Amount</li>
+                    <li>2 - Deposit Amount</li>
+                    <li>3 - Check Balance</li>
+                    <li>4 - Total Spent</li>
+                    <li>5 - Quit</li>
+                </ul>
+            </div>
+
+            <div class="action-area">
+                <div id="action-display"></div>
+                <input type="number" id="amount-input" placeholder="Enter amount" style="display:none;">
+                <button id="confirm-btn" style="display:none;">Confirm</button>
+            </div>
+
+            <div class="transaction-history">
+                <h3>Transaction History</h3>
+                <ul id="history-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
